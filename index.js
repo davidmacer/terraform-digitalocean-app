@@ -5,7 +5,7 @@ const os = require('os')
 const app = express()
 const mysql = require('mysql')
 
-app.get('/', (req, res) => res.send(`Hello world from ${os.hostname()}!`))
+app.get('/', (req, res) => res.send(`Hello, David Macer, from ${os.hostname()}!`))
 
 app.get('/time', (req, res) => {
     const connection = mysql.createConnection({
